@@ -15,7 +15,7 @@ class ContactsController < ApplicationController
 		end
 	end
 
-	private 
+	private
 
 	def secure_params
 		params.require(:contact).permit(:name, :email, :content)
