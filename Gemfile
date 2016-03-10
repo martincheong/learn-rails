@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-group :development, :test do
+group :development do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -50,3 +50,9 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :test do
+  gem 'byebug'
+  gem 'spring'
+  gem 'minitest-spec-rails'
+  gem 'minitest-rails-capybara'
+end
